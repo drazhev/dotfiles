@@ -1,5 +1,6 @@
 " Theme
 :colo molokai
+:syntax on
 
 " Vundle configuration
 set nocompatible
@@ -11,6 +12,8 @@ call vundle#rc()
 " Bundles
 Bundle 'gmarik/vundle'
 Bundle 'The-NERD-tree'
+Bundle 'php.vim-html-enhanced'
+Bundle 'Valloric/YouCompleteMe.git'
 
 " Tab remaps
 noremap <C-S-tab> :tabprevious<CR><Esc>
@@ -27,4 +30,5 @@ command Nerd NERDTree
 " Extend command-line history
 set history=100
 
+" Enable filetype detection
 filetype plugin indent on
